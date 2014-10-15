@@ -1,6 +1,6 @@
 class Bowl{
 	Bowl(int marker){
-		System.out.println("Bowl(" + makrer + ")");
+		System.out.println("Bowl(" + marker + ")");
 	}
 	void f(int marker){
 		System.out.println("f(" + marker + ")");
@@ -27,9 +27,10 @@ class CupBoard{
 
 	CupBoard(){
 		System.out.println("CupBoard()");
-		b4,f(2);
+		b4.f(2);
 	}
 
 	void f3 (int marker){
 		System.out.println("f3(" + marker + ")");
 	}
+}
