@@ -9,6 +9,7 @@ public final class Month2 {
 	}
 	
 	public final static Month2
+		EMP = new Month2("Empty"),
 		JAN = new Month2("January"),
 		FEB = new Month2("Febuary"),
 		MAR = new Month2("March"),
@@ -23,7 +24,7 @@ public final class Month2 {
 		DEC = new Month2("December");
 	
 	public final static Month2[] month = {
-		JAN, FEB, MAR, APR, MAY, JUN,
+		EMP,JAN, FEB, MAR, APR, MAY, JUN,
 		JUL, AUG, SEP, OCT, NOV, DEC
 	};
 	
@@ -31,9 +32,9 @@ public final class Month2 {
 		Month2 mon = Month2.JAN;
 		System.out.println(mon);
 
-		Month2 mons = Month2.month[20];
+		mon = Month2.month[11];
 		//m = Month2.month[month.length];
-		//System.out.println(m);
+		System.out.println(mon);
 		//System.out.println(m == Month2.DEC);
 	}
 }
