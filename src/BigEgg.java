@@ -21,6 +21,6 @@ public class BigEgg extends Egg{
 	}
 
 	public static void main(String[] args){
-		new BigEdd();
+		new BigEgg();
 	}
 }
