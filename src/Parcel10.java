@@ -1,10 +1,10 @@
-abstract class Contents{
-	abstract public int value();
-}
-
-interface Destination{
-	String readLabel();
-}
+//abstract class Contents{
+//	abstract public int value();
+//}
+//
+//interface Destination{
+//	String readLabel();
+//}
 
 public class Parcel10 {
 	private static class pContents extends Contents{
