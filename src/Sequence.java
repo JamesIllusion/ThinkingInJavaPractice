@@ -46,7 +46,7 @@ public class Sequence {
 		// TODO Auto-generated method stub
 		Sequence s = new Sequence(10);
 		
-		for (int i=0; i<10; i++)
+		for (int i = 0; i < 10; i++)
 			s.add(Integer.toString(i));
 		
 		Selector sl = s.getSelector();
