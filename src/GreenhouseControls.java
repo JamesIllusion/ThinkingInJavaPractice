@@ -122,5 +122,72 @@ public class GreenhouseControls extends Controller{
 			return "Thermo setting is on day setting";
 		}
 	}
+	
+	private int rings;
+	private class Bell extends Event{
+
+		public Bell(long eventTime) {
+			super(eventTime);
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public void action() {
+			// TODO Auto-generated method stub
+			System.out.println("Ding!");
+			
+			if (--rings > 0)
+				addEvent(new Bell(System.currentTimeMillis() + 2000));
+		}
+
+		@Override
+		public String description() {
+			// TODO Auto-generated method stub
+			return "Ring bell";
+		}
+	}
+	
+	private class Restart extends Event{
+
+		public Restart(long eventTime) {
+			super(eventTime);
+			// TODO Auto-generated constructor stub
+		}
+
+		@Override
+		public void action() {
+			// TODO Auto-generated method stub
+//			System.out.println("Greenhouse restarts!");
+			
+			long tm = System.currentTimeMillis();
+			
+			rings = 5;
+			
+			addEvent(new ThermostatNight(tm));
+			addEvent(new LightOn(tm+1000));
+			addEvent(new LightOff(tm+2000));
+			addEvent(new WaterOn(tm+3000));
+			addEvent(new WaterOff(tm+8000));
+			addEvent(new Bell(tm+9000));
+			addEvent(new ThermostatDay(tm+10000));
+			
+			addEvent(new Restart(tm+20000));
+		}
+
+		@Override
+		public String description() {
+			// TODO Auto-generated method stub
+			return "Greenhouse restarts!";
+		}
 		
+	}
+	
+	public static void main(String[] args){
+		GreenhouseControls gc = new GreenhouseControls();
+		
+		long tm = System.currentTimeMillis();
+		
+		gc.addEvent(gc.new Restart(tm));
+		gc.run();
+	}
 }
