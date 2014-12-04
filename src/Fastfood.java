@@ -14,17 +14,17 @@ class Soup{
 	public void f(){}
 }
 
-class Sandwich{
+class Burger{
 	void f(){
 		new Lunch();
 	}
 }
 
-public class Lunch{
+public class Fastfood{
 	void test(){
 //		Soup priv1 = new Soup();
 		Soup priv2 = Soup.makeSoup();
-		Sandwich fri1 = new Sandwich();
+		Burger fri1 = new Burger();
 		Soup.access().f();
 	}
 }
