@@ -1,3 +1,7 @@
+// Exercise 2-1
+// Print "Hello, world!"
+
+
 package exercise;
 
 public class Hello_Ch2Ex1{

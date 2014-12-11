@@ -1,3 +1,7 @@
+// Exercise 2-2
+// Print three argument from console / command line input
+
+
 package exercise;
 
 import java.io.*;
