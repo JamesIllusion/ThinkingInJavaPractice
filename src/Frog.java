@@ -86,4 +86,11 @@ public class Frog extends Amphibian{
 			DoBaseFinalization.flag = true;
 		else
 			System.out.println("not finalizing bases");
+		
+		new Frog();
+		
+		System.out.println("Bye");
+		
+		System.runFinalizersOnExit(true);
+	}
 }
