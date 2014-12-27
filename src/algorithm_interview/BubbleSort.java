@@ -1,6 +1,11 @@
 package algorithm_interview;
 
+import java.util.Arrays;
+
 public class BubbleSort {
+	
+	// this class should not be instantiated
+	private BubbleSort(){}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -16,8 +21,10 @@ public class BubbleSort {
 					array[j+1] = temp;
 				}
 		
-		for (int i=0; i<array.length; i++)
-			System.out.print(array[i] + ", ");
+//		for (int i=0; i<array.length; i++)
+//			System.out.print(array[i] + ", ");
+		
+		System.out.println(Arrays.toString(array));
 	}
 
 }

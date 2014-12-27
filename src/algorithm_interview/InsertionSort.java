@@ -1,6 +1,11 @@
 package algorithm_interview;
 
+import java.util.Arrays;
+
 public class InsertionSort {
+	
+	// this class should not be instantiated
+	private InsertionSort(){}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -19,8 +24,10 @@ public class InsertionSort {
 		}				
 		
 		
-		for (int i=0; i<array.length; i++)
-			System.out.print(array[i] + ", ");
+//		for (int i=0; i<array.length; i++)
+//			System.out.print(array[i] + ", ");
+		
+		System.out.println(Arrays.toString(array));
 	}
 
 }
