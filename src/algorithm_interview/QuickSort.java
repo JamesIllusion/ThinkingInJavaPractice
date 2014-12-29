@@ -35,9 +35,10 @@ public class QuickSort {
 
 	static int[] sort(int[] array, int left, int right){
 		if(right>left){
-			Random rand = new Random();
-			int pivotIndex = rand.nextInt(right-left+1);
+			final Random RND = new Random();
+			int pivotIndex = left+RND.nextInt(right-left+1);
 //			System.out.println("pivot index = " + pivotIndex);
+
 			int index = partition(array, left, right, pivotIndex);
 			sort(array, left, index-1);
 			sort(array, index+1, right);
