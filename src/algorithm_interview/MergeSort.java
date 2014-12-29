@@ -52,11 +52,10 @@ public class MergeSort {
 		// TODO Auto-generated method stub
 
 		int array[] = {3,5,8,4,6,1,2,7,9,0};
-		int temp = 0;
 		
 		int[] array_sorted = sort(array);
 		
-//		for (int i=0; i<array.length; i++)
+//		for (int i=0; i<array_sorted.length; i++)
 //			System.out.print(array_sorted[i] + ", ");
 		
 		System.out.println(Arrays.toString(array_sorted));
