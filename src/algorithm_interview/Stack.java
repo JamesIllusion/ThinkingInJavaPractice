@@ -1,14 +1,16 @@
-package algorithm_interview
+package algorithm_interview;
 
 public class Stack{
 
 //    constructor without size is not available
     private Stack(){  }
     
+    int top;
+    
 //    constructor with size
-    public Stack9(int size){
+    public Stack(int size){
         Object[] stack = new Object[size];
-        int top = stack.length-1;
+        this.top = stack.length-1;
     }
     
     public void push(Stack stk, Object obj){
@@ -26,7 +28,7 @@ public class Stack{
         return stk[top--];
     }
     
-    public bool isEmpty(Stack stk){
+    public boolean isEmpty(Stack stk){
         if(stk.top>=stk.length)
             return true;
         else
