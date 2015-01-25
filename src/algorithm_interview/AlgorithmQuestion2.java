@@ -5,25 +5,14 @@ package algorithm_interview;
 
 class Stack{
 	private int N;
-	private Node first;
+	private stackNode first;
 	
-	private class MinStack extends Stack{		
-		MinStack(){
-			first=null;
-			N=0;
-		}
+	private class stackNode{
+		int value;
+		int min;
+		stackNode next;
 		
-		void push(int m){
-			Node temp = first;
-			
-			if(m<first.data)
-				first = new Node(m);
-			else
-				first = new Node(first.data);
-			
-			first.next = temp;
-			N++;
-		}
+		stackNode(){		}
 	}
 	
 	Stack(){
@@ -40,32 +29,35 @@ class Stack{
 	}
 	
 	void push(int n){
-		Node temp = first;
-		first = new Node(n);
+		stackNode temp = first;
+		first = new stackNode();
+		first.value = n;
+		
+		if(isEmpty() || n<temp.min)
+			first.min = n;
+		else
+			first.min = temp.min;
+		
 		first.next = temp;
 		N++;
-		
-		MinStack.push(n);
 	}
 	
 	int pop(){
-		int n = first.data;
+		int value = first.value;
 		first = first.next;
 		
-		MinStack.pop();
-		
-		return n;
+		return value;
 	}
 	
 	int peek(){
 		if(isEmpty())
 			System.out.println("ERROR: Empty Stack");
 		
-		return first.data;
+		return first.value;
 	}
 	
 	int findMin(){
-		return MinStack.peek();
+		return first.min;
 	}
 }
 
