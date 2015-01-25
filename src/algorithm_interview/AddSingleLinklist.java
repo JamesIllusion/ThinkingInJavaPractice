@@ -1,3 +1,5 @@
+// given two link list, add together bit by bit to generate a new link list
+
 package algorithm_interview;
 
 class Node_{
@@ -12,8 +14,8 @@ class Node_{
 public class AddSingleLinklist {
 	
 	static Node addList(Node a, Node b){
-		Node answer = null;
-		Node mark = null;
+		Node answer = new Node(0);
+		Node mark = new Node(0);
 		
 		if(a==null || b==null)
 			System.out.println("not able to execute plus operation, missing element");
@@ -36,7 +38,7 @@ public class AddSingleLinklist {
 		// calculation loop
 		while(a!=null && b!=null){
 			if((a.data+b.data)>9){
-				answer.data = (a.data+b.data)-10;
+				answer.data = (a.data+b.data)%10;
 				answer.next = answer;
 				
 				while(mark!=answer){
