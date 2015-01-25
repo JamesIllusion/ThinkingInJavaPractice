@@ -69,6 +69,6 @@ class Stack{
 	}
 }
 
-public class AlgoithmQuestion2 {
+public class AlgorithmQuestion2 {
 
 }
