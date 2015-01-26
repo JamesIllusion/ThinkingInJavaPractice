@@ -1,4 +1,6 @@
-// given a binary search tree, convert it to a sorted double link list without extra space (in-place operation)
+// given a binary search tree, convert it to a sorted double link list without extra space 
+
+// answer: in-order traversal the tree
 
 package algorithm_interview;
 

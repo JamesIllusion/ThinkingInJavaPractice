@@ -1,6 +1,8 @@
 // define data structure of stack, with operation of 'findMin' to get the minimum element from the stack
 // time complexity of 'findMin' , 'push', 'pop' has to be O(1)
 
+// answer: using a auxiliary stack / value pointer to store current minimum value
+
 package algorithm_interview;
 
 class Stack{
