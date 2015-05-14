@@ -29,7 +29,6 @@ public class Sequence {
 			return o[i];
 		}
 
-		@Override
 		public void next() {
 			// TODO Auto-generated method stub
 			if(i < o.length)
