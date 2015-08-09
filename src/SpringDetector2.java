@@ -30,7 +30,7 @@ public class SpringDetector2 {
 		System.out.println("Looking up prediction for Groundhog #3");
 		Groundhog2 gh = new Groundhog2(3);
 		if(ht.containsKey(gh))
-			System.out.println(ht.get(gh));
+			System.out.println(ht.get(gh).toString());
 
 	}
 
