@@ -14,3 +14,9 @@ Inner class is tricky; with upcasting, more tricky.
 To implements algorithm in coding, I need to be more accurate and precise.
 
 =========================
+
+2015.09.09
+
+Update document structure and add example files during reviewing
+
+=========================
