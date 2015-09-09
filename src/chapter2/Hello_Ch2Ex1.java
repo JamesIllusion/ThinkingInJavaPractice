@@ -1,8 +1,8 @@
-// Exercise 2-1
-// Print "Hello, world!"
+//:Exercise 2-1
 
+package chapter2;
 
-package exercise;
+//Print "Hello, world!"
 
 public class Hello_Ch2Ex1{
 	public static void main(String[] args){
