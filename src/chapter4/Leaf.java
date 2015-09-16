@@ -1,3 +1,8 @@
+//: Leaf.java
+// Simple use of the 'this' keyword
+
+package chapter4;
+
 public class Leaf{
 	private int i = 0;
 	

@@ -1,3 +1,8 @@
+//: Flower.java
+// Calling constructors with 'this'
+
+package chapter4;
+
 public class Flower{
 	private int petalCount = 0;
 	private String s = new String ("null");
@@ -24,7 +29,7 @@ public class Flower{
 
 	void print(){
 //		this(11);
-		System.out.println("petalCount = " + petalCount + "s = " + s);
+		System.out.println("petalCount = " + petalCount + " s = " + s);
 	}
 
 	public static void main(String[] args){

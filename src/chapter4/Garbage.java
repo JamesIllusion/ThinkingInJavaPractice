@@ -1,3 +1,9 @@
+//: Garbage.java
+// Demonstration of the garbage
+// collector and finalization
+
+package chapter4;
+
 class Chair{
 	static boolean gcrun = false;
 	static boolean flag = false;
