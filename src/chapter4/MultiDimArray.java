@@ -1,3 +1,8 @@
+//: MultiDimArray.java
+// Creating multidimensional arrays
+
+package chapter4;
+
 import java.util.*;
 
 public class MultiDimArray{
