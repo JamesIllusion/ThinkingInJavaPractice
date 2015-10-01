@@ -1,3 +1,8 @@
+//: Bath.java
+// Constructor initialization with composition
+
+package chapter6;
+
 class Soap{
 	private String str;
 	Soap(){

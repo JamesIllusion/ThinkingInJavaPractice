@@ -1,3 +1,8 @@
+//: SprinkleSystem.java
+// Composition for code reuse
+
+package chapter6;
+
 class WaterSource{
 	private String str;
 	WaterSource(){
@@ -28,6 +33,9 @@ public class SprinklerSystem{
 
 	public static void main(String[] args){
 		SprinklerSystem x = new SprinklerSystem();
-		x.print();
+//		x.print();
+		
+		WaterSource ws = new WaterSource();
+		System.out.println(ws.toString());
 	}
 }

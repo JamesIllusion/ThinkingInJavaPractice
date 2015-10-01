@@ -1,3 +1,7 @@
+//: Detergent.java
+// Inheritance syntax & properties
+
+package chapter6;
 
 class Cleanser{
 	private String str = new String ("Cleanser");
@@ -22,12 +26,12 @@ class Cleanser{
 
 public class Detergent extends Cleanser{
 	public void scrub(){
-		append(" Detergent.scrub()");
+		append(" // Detergent.scrub()");
 		super.scrub();
 	}
 
 	public void foam(){
-		append(" foam()");
+		append("_foam()");
 	}
 
 	public static void main(String[] args){

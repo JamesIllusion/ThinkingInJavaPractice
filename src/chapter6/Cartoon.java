@@ -1,3 +1,8 @@
+//: Cartoon.java
+// Constructor calls during inheritance
+
+package chapter6;
+
 class Art{
 	Art(){
 		System.out.println("Default Art Constructor");
