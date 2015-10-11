@@ -1,3 +1,8 @@
+//: Enumerators2.java
+// Revisiting Enumerations
+
+package chapter8;
+
 import java.util.*;
 
 class PrintData{

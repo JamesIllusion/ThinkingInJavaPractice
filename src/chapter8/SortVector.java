@@ -1,6 +1,11 @@
+//: SortVector.java
+// A generic sorting vector
+
+package chapter8;
+
 import java.util.Vector;
 
-public class SortVector extends Vector{
+public class SortVector extends Vector<Object>{
 	private Compare compare;
 	public SortVector(Compare comp){
 		compare = comp;
@@ -17,10 +22,10 @@ public class SortVector extends Vector{
 			int j = right;
 			
 			while(true){
-				while(compare.lessthan(elementAt(++i), o1))
+				while(compare.lessThan(elementAt(++i), o1))
 					;
 				while(j>0)
-					if(compare.lessOrequal(elementAt(--j), o1))
+					if(compare.lessThanOrEqual(elementAt(--j), o1))
 						break;
 				if(i >= j) 
 					break;

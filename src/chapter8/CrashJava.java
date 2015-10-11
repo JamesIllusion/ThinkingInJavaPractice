@@ -1,3 +1,8 @@
+//: CrashJava.java
+// One way to crash Java
+
+package chapter8;
+
 import java.util.*;
 
 public class CrashJava {

@@ -1,3 +1,7 @@
+//: ArraySize.java
+// Initialization & re-assignment of arrays
+
+package chapter8;
 
 class Weeble{}
 

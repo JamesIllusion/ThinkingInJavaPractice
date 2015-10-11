@@ -1,3 +1,8 @@
+//: HamsterMaze.java
+// Using an Enumeration
+
+package chapter8;
+
 import java.util.*;
 
 class Hamster{

@@ -1,3 +1,8 @@
+//: CatsAndDogs.java
+// Simple collection example (Vector)
+
+package chapter8;
+
 import java.util.*;
 
 class Cat{

@@ -1,3 +1,9 @@
+//: WorksAnyway.java
+// In special cases, things just seem
+// to work correctly
+
+package chapter8;
+
 import java.util.*;
 
 class Mouse{
@@ -8,14 +14,14 @@ class Mouse{
 	}
 	
 	public String toString(){
-		return "This is Mouse#" + mouseNumber;
+		return "This is Mouse #" + mouseNumber;
 	}
 	
 	void print (String msg){
 		if(msg != null)
 			System.out.println(msg);
 		
-		System.out.println("Mouse number" + mouseNumber);
+		System.out.println("Mouse number " + mouseNumber);
 	}
 }
 

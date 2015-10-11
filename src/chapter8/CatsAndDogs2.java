@@ -1,3 +1,8 @@
+//: CatsAndDogs2.java
+// Simple collection with Enumeration
+
+package chapter8;
+
 import java.util.*;
 
 class Cat2{

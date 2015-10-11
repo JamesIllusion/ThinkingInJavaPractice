@@ -1,3 +1,8 @@
+//: GopherVector.java
+// A type-conscious Vector
+
+package chapter8;
+
 import java.util.*;
 
 class Gopher{
